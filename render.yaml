@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: bus-tracker
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run bus_tracker.py --server.port=$PORT"
+    plan: free
